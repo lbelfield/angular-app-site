@@ -2,9 +2,6 @@
 /// <reference path="../node_modules/awesome-typescript-loader/dist/runtime.d.ts" />
 "use strict";
 const parent_component_1 = require("./shared/parent.component");
-require("jquery");
-require("angular");
-require("angular-route");
 angular.module("myapp", [
     "ngRoute"
 ]).config(configure);

@@ -2,9 +2,6 @@
 /// <reference path="../node_modules/awesome-typescript-loader/dist/runtime.d.ts" />
 
 import ParentComponent from "./shared/parent.component"; 
-import "jquery";
-import "angular";
-import "angular-route";
 
 angular.module("myapp", [
     "ngRoute"
