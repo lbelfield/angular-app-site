@@ -3,7 +3,6 @@ class ParentController {
     public childSavingIndicator: string;
 
     public constructor() {
-        console.log("hello");
         this.childVisible = true;
         this.childSavingIndicator = "start";
     }
@@ -17,7 +16,6 @@ class ParentController {
         this.childVisible = false;
         this.childSavingIndicator = "world";
     }
-
 }
 
 class ParentComponent {

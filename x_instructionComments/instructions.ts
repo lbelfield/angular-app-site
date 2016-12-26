@@ -148,7 +148,8 @@ typescript:
         This is the configuration file for webpack.
         Specifies the two entry files (js/app.module.js & js/vendor.js).
         These are the trasnpiled ts and es2015 files:
-            app.module.js = global Angular Module that imports and defines all the components, services etc and handles dependency injector and configures the routing.   
+            app.module.js = global Angular Module that imports and defines all the components, services etc.
+            Also handles dependency injector and configures the routing.   
             vendor.js = the third party dependencies, eg angular and jquery
         This then specifies where to put the output of these bundle.js files - ./dist/[name]-bundle.js (eg app-bundle.js or vendor-bundle.js)
         Specifies the two loaders:
@@ -157,7 +158,8 @@ typescript:
                 require('babel-register')({ "presets": ["es2015"]}); and have a npm install babel-register --save-dev
             2 the html-loader:
                 the html-loader and html-webpack-plugin (dev dependencies) assist with bundling the Angular Templates within the [name]-bundle.js.
-                In other words all components have a template (html). This html-loader adds the html into the bundles, because only a babel loader is specified which handles js files.
+                In other words all components have a template (html). 
+                This html-loader adds the html into the bundles, because only a babel loader is specified which handles js files.
 
 
     .bowerrc
@@ -244,8 +246,5 @@ git push -u origin master
 ******************************************************************************************************************************
 
 todo - less, angular2 (currently on angular 1.5.8)
-     - separate config file
-     - adding components
-
 
 */

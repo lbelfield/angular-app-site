@@ -3,9 +3,7 @@
 
 import ParentComponent from "./shared/parent.component"; 
 
-angular.module("myapp", [
-    "ngRoute"
-]).config(configure);
+angular.module("myapp", ["ngRoute"]).config(configure);
 configure.$inject = ["$routeProvider"];
 
 angular.module("myapp")
@@ -21,6 +19,6 @@ function configure($routeProvider) {
             });
 }
 
-angular.element(document).ready(() => {
-    angular.bootstrap(document.querySelector("#applicationHost"), ["myapp"]);
-});
+// angular.element(document).ready(() => {
+//     angular.bootstrap(document.querySelector("#applicationHost"), ["myapp"]);
+// });

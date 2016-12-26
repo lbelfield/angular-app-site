@@ -59,9 +59,9 @@
 	        redirectTo: "/home"
 	    });
 	}
-	angular.element(document).ready(function () {
-	    angular.bootstrap(document.querySelector("#applicationHost"), ["myapp"]);
-	});
+	// angular.element(document).ready(() => {
+	//     angular.bootstrap(document.querySelector("#applicationHost"), ["myapp"]);
+	// });
 	//# sourceMappingURL=app.module.js.map
 
 /***/ },
@@ -78,7 +78,6 @@
 	    function ParentController() {
 	        _classCallCheck(this, ParentController);
 
-	        console.log("hello");
 	        this.childVisible = true;
 	        this.childSavingIndicator = "start";
 	    }
@@ -117,7 +116,7 @@
 
 	"use strict";
 
-	module.exports = "<div>Parent component</div>";
+	module.exports = "<div>Parent component</div>\r\n<div ng-show=\"$ctrl.childVisible\">{{$ctrl.childSavingIndicator}}</div>\r\n<div>\r\n    <button ng-click=\"$ctrl.showChild()\">Show</button>\r\n    <button ng-click=\"$ctrl.hideChild()\">Hide</button>\r\n</div>";
 
 /***/ }
 /******/ ]);

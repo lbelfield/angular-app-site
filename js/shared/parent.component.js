@@ -1,7 +1,6 @@
 "use strict";
 class ParentController {
     constructor() {
-        console.log("hello");
         this.childVisible = true;
         this.childSavingIndicator = "start";
     }

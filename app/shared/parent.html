@@ -1,1 +1,6 @@
 <div>Parent component</div>
+<div ng-show="$ctrl.childVisible">{{$ctrl.childSavingIndicator}}</div>
+<div>
+    <button ng-click="$ctrl.showChild()">Show</button>
+    <button ng-click="$ctrl.hideChild()">Hide</button>
+</div>

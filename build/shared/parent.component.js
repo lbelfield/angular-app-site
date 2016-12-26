@@ -8,7 +8,6 @@ var ParentController = function () {
     function ParentController() {
         _classCallCheck(this, ParentController);
 
-        console.log("hello");
         this.childVisible = true;
         this.childSavingIndicator = "start";
     }

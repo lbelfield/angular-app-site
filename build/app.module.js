@@ -13,7 +13,7 @@ function configure($routeProvider) {
         redirectTo: "/home"
     });
 }
-angular.element(document).ready(function () {
-    angular.bootstrap(document.querySelector("#applicationHost"), ["myapp"]);
-});
+// angular.element(document).ready(() => {
+//     angular.bootstrap(document.querySelector("#applicationHost"), ["myapp"]);
+// });
 //# sourceMappingURL=app.module.js.map

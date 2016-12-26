@@ -2,9 +2,7 @@
 /// <reference path="../node_modules/awesome-typescript-loader/dist/runtime.d.ts" />
 "use strict";
 const parent_component_1 = require("./shared/parent.component");
-angular.module("myapp", [
-    "ngRoute"
-]).config(configure);
+angular.module("myapp", ["ngRoute"]).config(configure);
 configure.$inject = ["$routeProvider"];
 angular.module("myapp")
     .component("parentComponent", new parent_component_1.default());
@@ -17,7 +15,7 @@ function configure($routeProvider) {
         redirectTo: "/home"
     });
 }
-angular.element(document).ready(() => {
-    angular.bootstrap(document.querySelector("#applicationHost"), ["myapp"]);
-});
+// angular.element(document).ready(() => {
+//     angular.bootstrap(document.querySelector("#applicationHost"), ["myapp"]);
+// });
 //# sourceMappingURL=app.module.js.map
